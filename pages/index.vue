@@ -25,8 +25,8 @@ const links = [
                     }}</ULink>
             </ul>
             <div class="flex items-center justify-end lg:flex-1 gap-1.5">
-                <UButton to="https://github.com/jotadevelopers/uno-admin" icon="i-heroicons-star" variant="outline"
-                    color="purple">Star on Github</UButton>
+                <UButton target="_blank" to="https://github.com/jotadevelopers/uno-admin" icon="i-heroicons-star"
+                    variant="outline" color="purple">Star on Github</UButton>
             </div>
         </div>
 
