@@ -24,7 +24,10 @@ const links = [
                         link.label
                     }}</ULink>
             </ul>
-            <div class="flex items-center justify-end lg:flex-1 gap-1.5"></div>
+            <div class="flex items-center justify-end lg:flex-1 gap-1.5">
+                <UButton to="https://github.com/jotadevelopers/uno-admin" icon="i-heroicons-star" variant="outline"
+                    color="purple">Star on Github</UButton>
+            </div>
         </div>
 
     </header>
