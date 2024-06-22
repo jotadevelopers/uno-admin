@@ -14,12 +14,12 @@ const links = [
             <div class="lg:flex-1 flex items-center gap-1.5">
                 <ULink to="/" class="flex items-center">
                     <img src="@/assets/logo.png" class="h-6 mr-3 sm:h-9" alt="Uno Admin Logo">
-                    <span class="self-center text-xl font-semibold whitespace-nowrap text-primary dark:text-white">Uno
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-teal-500 dark:text-white">Uno
                         Admin</span>
                 </ULink>
             </div>
             <ul class="items-center gap-x-8 hidden lg:flex w-auto">
-                <ULink active-class="text-primary" exact v-for="(link, idx) in links" :key="idx" :to="link.to">{{
+                <ULink active-class="text-teal-500" exact v-for="(link, idx) in links" :key="idx" :to="link.to">{{
                     link.label
                 }}</ULink>
             </ul>

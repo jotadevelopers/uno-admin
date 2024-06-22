@@ -14,7 +14,8 @@
                     flexibility, developer-friendly, modular,
                     feature-rich, and highly customizable.</p>
                 <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                    <UButton :ui="{ rounded: 'rounded-full' }" to="https://github.com/jotadevelopers/uno-admin">Get free
+                    <UButton color="purple" :ui="{ rounded: 'rounded-full' }"
+                        to="https://github.com/jotadevelopers/uno-admin">Get free
                         version</UButton>
                     <!-- <UButton color="purple" variant="outline" :ui="{ rounded: 'rounded-full' }">Get pro version
                     </UButton> -->
