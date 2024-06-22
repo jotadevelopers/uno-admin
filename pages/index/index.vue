@@ -96,6 +96,104 @@
 
         </div>
     </section>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6">
+            <div class="space-y-8 lg:grid lg:grid-cols-2 sm:gap-6 xl:gap-10 lg:space-y-0">
+
+                <!-- Pricing Card -->
+                <div
+                    class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">Free Version</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for
+                        your next project.</p>
+                    <div class="flex items-baseline justify-center my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$0</span>
+                    </div>
+                    <!-- List -->
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>Free forever (MIT License)</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>Lifetime free updates</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>Community support</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>Documentation</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>Free Components</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>Example Pages (LandPage, Auth Pages, Dasboard, Account, Error)</span>
+                        </li>
+                    </ul>
+                    <UButton to="https://github.com/jotadevelopers/uno-admin" color="purple" block size="lg">Get started
+                    </UButton>
+
+                </div>
+                <!-- Pricing Card -->
+                <div
+                    class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">Pro Version</h3>
+                    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and
+                        extended redistribution rights.</p>
+                    <div class="flex items-baseline justify-center my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$69</span>
+                    </div>
+                    <!-- List -->
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>All in free version</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span>12 Months Support & Updates</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span> Personal or Commercial Use </span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span> Pro Dashboards </span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span> Pro Components </span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <UIcon name="i-heroicons-check-badge-16-solid" class="text-green-500" />
+                            <span> Modules (Security, Email, Calendar) </span>
+                        </li>
+                    </ul>
+                    <UButton color="purple" disabled block size="lg">Come soon</UButton>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="bg-white dark:bg-gray-800">
         <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
             <div class="text-center">

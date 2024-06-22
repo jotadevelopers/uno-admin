@@ -12,7 +12,7 @@ definePageMeta({
                 <p class="text-gray-400">Please sign-in to your account and start the adventure </p>
             </div>
 
-            <UForm class="space-y-4 mt-4" @submit="() => $router.push('/')">
+            <UForm class="space-y-4 mt-4" @submit="() => $router.push('/dashboard')">
 
                 <UFormGroup label="Email" name="email">
                     <UInput />

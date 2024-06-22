@@ -19,9 +19,10 @@ const links = [
                 </ULink>
             </div>
             <ul class="items-center gap-x-8 hidden lg:flex w-auto">
-                <ULink active-class="text-teal-500" exact v-for="(link, idx) in links" :key="idx" :to="link.to">{{
-                    link.label
-                }}</ULink>
+                <ULink active-class="text-teal-500" class="font-medium" exact v-for="(link, idx) in links" :key="idx"
+                    :to="link.to">{{
+                        link.label
+                    }}</ULink>
             </ul>
             <div class="flex items-center justify-end lg:flex-1 gap-1.5"></div>
         </div>
