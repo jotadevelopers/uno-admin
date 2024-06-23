@@ -4,7 +4,7 @@ definePageMeta({
 })
 </script>
 <template>
-    <div class="min-h-screen bg-gray-100 flex-row justify-center items-center p-10">
+    <div class="min-h-screen flex-row justify-center items-center p-10">
         <UCard class="max-w-xl mx-auto">
             <div class="text-center">
                 <img src="@/assets/logo.png" alt="Logo" class="mx-auto h-16 dark:bg-gray-600 dark:rounded-full" />
