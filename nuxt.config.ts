@@ -4,8 +4,11 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["types/*.ts", "store/*.ts", "types/**/*.ts"],
   },
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@sidebase/nuxt-auth"],
   ui: {
     icons: ["simple-icons"],
+  },
+  runtimeConfig: {
+    secret: "12345",
   },
 });

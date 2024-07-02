@@ -1,29 +1,49 @@
 <script setup>
 definePageMeta({
     layout: 'blank',
-})
+    auth: false
+});
+const { signIn } = useAuth();
+import schema from '../lib/schemas/register';
+const loading = ref(false);
+const formData = reactive({ name: '', email: '', password: '' });
+
+async function onSubmit(event) {
+    try {
+        loading.value = true;
+        await signIn({ email: 'admin@uno.com', password: 'admin' }, { callbackUrl: '/dashboard' })
+        loading.value = false;
+    } catch (error) {
+        loading.value = false;
+        useToast().add({ description: error.message, color: 'red' })
+    }
+}
+const notImplemented = () => {
+    useToast().add({ description: 'Not implemented yet.', color: 'orange' })
+}
+
 </script>
 <template>
-    <div class="min-h-screen p-10 bg-gray-100 flex-row justify-center items-center">
-        <UCard class="max-w-xl mx-auto">
+    <div class="min-h-screen p-2 flex-row justify-center items-center">
+        <UCard class="max-w-xl mx-auto shadow-lg">
             <div class="text-center">
                 <img src="@/assets/logo.png" alt="Logo" class="mx-auto h-16 dark:bg-gray-600 dark:rounded-full" />
                 <h1 class="font-medium text-xl text-gray-700">Welcome to Uno Admin</h1>
                 <p class="text-gray-400">Sign-up on our platform and have lots of fun</p>
             </div>
 
-            <UForm class="space-y-4 mt-4" @submit="() => $router.push('/')">
+            <UForm :state="formData" :schema class="space-y-4 mt-4" @submit="onSubmit">
 
                 <UFormGroup label="User Name" name="name">
-                    <UInput />
+                    <UInput v-model="formData.name" />
                 </UFormGroup>
 
                 <UFormGroup label="Email" name="email">
-                    <UInput />
+                    <UInput v-model="formData.email" />
                 </UFormGroup>
 
                 <UFormGroup label="Password" name="password">
-                    <UInput type="password" />
+                    <UInput type="password" v-model="formData.password" />
                 </UFormGroup>
 
                 <div class="flex gap-2 items-center">
@@ -40,8 +60,10 @@ definePageMeta({
 
                 <UDivider label="OR" />
 
-                <UButton color="gray" label="Sign up with Google" icon="i-simple-icons-github" block />
-                <UButton color="gray" label="Sign up with Facebook" icon="i-simple-icons-google" block />
+                <UButton @click="notImplemented" color="gray" label="Sign up with Google" icon="i-simple-icons-github"
+                    block />
+                <UButton @click="notImplemented" color="gray" label="Sign up with Facebook" icon="i-simple-icons-google"
+                    block />
             </UForm>
         </UCard>
     </div>

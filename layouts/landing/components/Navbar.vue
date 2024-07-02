@@ -1,8 +1,9 @@
 <script setup>
+
 const mobileMenuOpen = ref(false);
 const links = [
     { label: 'Home', to: '/' },
-    { label: 'Documentation', to: '/docs' }
+    { label: 'Documentation', to: 'https://uno-admin.vercel.app/docs' }
 ]
 </script>
 <template>
@@ -28,6 +29,8 @@ const links = [
             <div class="flex items-center justify-end lg:flex-1 gap-1.5">
                 <UButton target="_blank" to="https://github.com/jotadevelopers/uno-admin" icon="i-heroicons-star"
                     variant="outline" color="purple">Star on Github</UButton>
+                <UButton to="/dashboard" color="primary">Dashboard
+                </UButton>
                 <UButton icon="i-heroicons-bars-3-20-solid" class="md:hidden" variant="ghost" color="gray"
                     @click="mobileMenuOpen = !mobileMenuOpen">
                 </UButton>
