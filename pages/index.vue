@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ layout: 'landing' });
+definePageMeta({ layout: 'landing', auth: false });
 </script>
 <template>
     <section>
