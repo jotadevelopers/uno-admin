@@ -2,13 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   imports: {
-    dirs: ["types/*.ts", "store/*.ts", "types/**/*.ts"],
+    dirs: ["types/*.ts", "store/*.ts", "@core/**/types/*.ts"],
   },
+  extends: ["./@core/base", "./@core/auth", "./@app/dashboard", "./@app/site"],
   modules: ["@nuxt/ui", "@sidebase/nuxt-auth"],
   ui: {
     icons: ["simple-icons"],
-  },
-  runtimeConfig: {
-    secret: "12345",
   },
 });
