@@ -10,7 +10,7 @@ definePageMeta({
             <div class="space-y-5 max-w-4xl mx-auto text-center">
                 <h1
                     class="text-3xl font-extrabold mx-auto md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#4ade80] to-[#166534]">
-                    Welcome to Uno Admin
+                    Welcome to Uno Admin Template
                 </h1>
                 <h2 class="text-4xl font-extrabold mx-auto md:text-5xl"> Build your Application with the best </h2>
                 <p class="max-w-2xl mx-auto"> Best opensource admin template. Built on top of Nuxtjs and Nuxt UI, Its
