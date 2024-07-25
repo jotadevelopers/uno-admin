@@ -10,18 +10,17 @@ definePageMeta({
             <div class="space-y-5 max-w-4xl mx-auto text-center">
                 <h1
                     class="text-3xl font-extrabold mx-auto md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#4ade80] to-[#166534]">
-                    Welcome to Uno Admin Template
+                    Welcome to Uno Admin
                 </h1>
                 <h2 class="text-4xl font-extrabold mx-auto md:text-5xl"> Build your Application with the best </h2>
                 <p class="max-w-2xl mx-auto"> Best opensource admin template. Built on top of Nuxtjs and Nuxt UI, Its
                     flexibility, developer-friendly, modular, feature-rich, and highly customizable.. </p>
                 <div class="items-center justify-center gap-3 flex">
                     <UButton to="/dashboard" size="lg">Get Started</UButton>
-                    <UButton icon="i-heroicons-star" target="_blank" to="https://uno-admin.vercel.app" size="lg"
-                        variant="outline" color="yellow">Get Pro
+                    <UButton icon="i-heroicons-star" target="_blank" to="/" size="lg" variant="outline" color="yellow">
+                        Get Pro
                     </UButton>
-                    <UButton target="_blank" to="https://uno-admin.vercel.app/docs" size="lg" variant="outline"
-                        color="gray">Docs
+                    <UButton target="_blank" to="/docs" size="lg" variant="outline" color="gray">Docs
                     </UButton>
                 </div>
             </div>

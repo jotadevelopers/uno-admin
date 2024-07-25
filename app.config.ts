@@ -1,11 +1,9 @@
 export default defineAppConfig({
-  ui: {
-    primary: "blue",
-    icons: ["simple-icons"],
+  uno: {
+    title: "Uno Admin",
+    toggleDarkMode: true,
+    colorPicker: true,
+    sidebarMenuItems: [],
+    toolbarActions: [],
   },
-  title: "Uno Admin",
-  toggleDarkMode: true,
-  colorPicker: true,
-  sidebarMenuItems: <SidebarMenuItems[]>[],
-  toolbarActions: <unknown[]>[],
 });
