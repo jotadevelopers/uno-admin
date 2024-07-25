@@ -16,11 +16,11 @@ definePageMeta({
                 <p class="max-w-2xl mx-auto"> Best opensource admin template. Built on top of Nuxtjs and Nuxt UI, Its
                     flexibility, developer-friendly, modular, feature-rich, and highly customizable.. </p>
                 <div class="items-center justify-center gap-3 flex">
-                    <UButton to="/dashboard" size="lg">Get Started</UButton>
-                    <UButton icon="i-heroicons-star" target="_blank" to="/" size="lg" variant="outline" color="yellow">
+                    <UButton to="/dashboard" size="lg">View Demo</UButton>
+                    <!-- <UButton icon="i-heroicons-star" target="_blank" to="/" size="lg" variant="outline" color="yellow">
                         Get Pro
-                    </UButton>
-                    <UButton target="_blank" to="/docs" size="lg" variant="outline" color="gray">Docs
+                    </UButton> -->
+                    <UButton to="/docs" size="lg" variant="outline" color="gray">Docs
                     </UButton>
                 </div>
             </div>

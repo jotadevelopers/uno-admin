@@ -19,7 +19,7 @@ const links = [
                 </ULink>
             </div>
             <nav class="">
-                <ul class="items-center gap-x-8 hidden lg:flex w-auto">
+                <ul class="items-center gap-x-8 hidden md:flex w-auto">
                     <ULink active-class="text-primary" class="font-medium" :target="link.target" exact
                         v-for="(link, idx) in links" :key="idx" :to="link.to">{{
                             link.label
@@ -29,7 +29,7 @@ const links = [
             <div class="flex items-center justify-end lg:flex-1 gap-1.5">
                 <UButton target="_blank" to="https://github.com/jotadevelopers/uno-admin" icon="i-heroicons-star"
                     variant="outline" color="purple">Star on Github</UButton>
-                <UButton to="/dashboard" color="primary">Dashboard
+                <UButton to="/dashboard" color="primary">View Demo
                 </UButton>
                 <UButton icon="i-heroicons-bars-3-20-solid" class="md:hidden" variant="ghost" color="gray"
                     @click="mobileMenuOpen = !mobileMenuOpen">

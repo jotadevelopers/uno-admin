@@ -7,9 +7,9 @@ export default defineNuxtConfig({
   extends: [
     "./@core/base",
     "./@core/auth",
-    "./@feature/dashboard",
-    "./@feature/site",
-    "./@feature/docs",
+    "./@features/dashboard",
+    "./@features/site",
+    "./@features/docs",
   ],
   modules: ["@nuxt/ui", "@sidebase/nuxt-auth"],
   ui: {

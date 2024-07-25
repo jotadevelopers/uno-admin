@@ -16,14 +16,22 @@ const gettingStarted = [
 const components = [
     { label: 'Page', to: '/docs/components/page', icon: 'i-heroicons-check-circle' },
 ]
+
+const menuOpen = ref(true);
 </script>
 <template>
     <section class="flex flex-row">
-        <aside class="w-56 h-full border-r p-2 space-y-4 dark:border-gray-700">
-            <p class="text-sm font-medium">Getting Started</p>
-            <UVerticalNavigation :links="gettingStarted" />
-            <p class="text-sm font-medium">Components</p>
-            <UVerticalNavigation :links="components" />
+        <aside class="h-full border-r p-2 space-y-4 dark:border-gray-700">
+            <div class="md:hidden flex items-center gap-2">
+                <UButton icon="i-heroicons-bars-3-20-solid" variant="ghost" color="gray" @click="menuOpen = !menuOpen">
+                </UButton>
+            </div>
+            <div v-show="menuOpen" class="w-56">
+                <p class="text-sm font-medium">Getting Started</p>
+                <UVerticalNavigation :links="gettingStarted" />
+                <p class="text-sm font-medium">Components</p>
+                <UVerticalNavigation :links="components" />
+            </div>
         </aside>
         <main class="p-4 w-full">
             <ContentDoc>
