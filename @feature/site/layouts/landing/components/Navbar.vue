@@ -3,7 +3,7 @@
 const mobileMenuOpen = ref(false);
 const links = [
     { label: 'Home', to: '/' },
-    { label: 'Documentation', to: '/docs' }
+    { label: 'Documentation', to: '/docs', exact: false }
 ]
 </script>
 <template>

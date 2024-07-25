@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     sources: {
       docs: {
         prefix: "/docs",
-        base: "./@app/docs/content", // referenced from root
+        base: "./@feature/docs/content", // referenced from root
         driver: "fs",
       },
     },
