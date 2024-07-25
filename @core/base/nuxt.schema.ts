@@ -31,7 +31,7 @@ export default defineNuxtSchema({
         /**
          * Alt description for the image.
          */
-        alt: "Alpine Admin logo",
+        alt: "Uno Admin logo",
       },
       colorPicker: true,
       toggleDarkMode: true,

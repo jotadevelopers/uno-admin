@@ -18,14 +18,14 @@ const components = [
 ]
 </script>
 <template>
-    <section class="flex flex-row gap-4">
-        <aside class="w-56 h-screen border-r p-2 space-y-4">
+    <section class="flex flex-row">
+        <aside class="w-56 h-full border-r p-2 space-y-4 dark:border-gray-700">
             <p class="text-sm font-medium">Getting Started</p>
             <UVerticalNavigation :links="gettingStarted" />
             <p class="text-sm font-medium">Components</p>
             <UVerticalNavigation :links="components" />
         </aside>
-        <main class="p-2 w-full">
+        <main class="p-4 w-full">
             <ContentDoc>
                 <template #not-found>
                     <p>Document not found</p>
