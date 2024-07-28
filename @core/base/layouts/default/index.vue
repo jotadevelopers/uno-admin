@@ -30,8 +30,8 @@
     <UNotifications />
 </template>
 <script setup lang="ts">
-const appConfig = useAppConfig()
-useHead({ title: appConfig.uno.title });
+const { uno } = useAppConfig()
+useHead({ title: uno.title });
 </script>
 <style>
 :root {

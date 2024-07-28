@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const config = useAppConfig();
-const items = config.uno.sidebarMenuItems?.sort((a, b) => a.order - b.order);
+const {uno} = useAppConfig();
+const items = uno.sidebarMenuItems?.sort((a, b) => a.order - b.order);
 </script>
 
 <template>
