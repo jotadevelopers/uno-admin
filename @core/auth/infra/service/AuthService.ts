@@ -15,7 +15,8 @@ let _user: User = {
 
 export default class UserService {
   async login(email: string, password: string): Promise<User> {
-    if (!bcrypt.compareSync(password, _user.password!)) {
+    const isValid = await bcrypt.compare(password, _user.password!);
+    if (!isValid) {
       throw new Error("Invalid email or password.");
     }
     delete _user.password;

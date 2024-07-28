@@ -3,6 +3,41 @@ definePageMeta({
     layout: 'landing',
     auth: false,
 });
+
+const features = [
+    {
+        title: 'Nuxt Architecture',
+        description: 'Harness the full power of Nuxt 3 and its modules ecosystem.',
+        icon: 'i-simple-icons-nuxtdotjs'
+    },
+    {
+        title: 'Vue Components',
+        description: 'Use built-in components (or your own!) inside your content.',
+        icon: 'i-simple-icons-vuedotjs'
+    },
+    {
+        title: 'Modular development',
+        description: 'Build your application in a modular way, using Nuxt\'s powerful layering system.',
+        icon: 'i-heroicons-rectangle-group'
+    },
+    {
+        title: 'Elegant Design',
+        description: 'Craft beautiful sites with NuxtUI and Headless UI components. Built with TailwindCSS and mobile first.',
+        icon: 'i-heroicons-paint-brush'
+    },
+    {
+        title: 'JWT Auth, ACL, etc',
+        description: 'Uno Admin provides extendable JWT auth which can be configured easily and provides ready to use ACL.',
+        icon: 'i-simple-icons-jsonwebtokens'
+    },
+    {
+        title: 'Deploy anywhere',
+        description: 'Zero config to deploy on Vercel or Netlify. Uno Admin is carefully crafted and ready for production.',
+        icon: 'i-heroicons-rocket-launch'
+    },
+]
+
+
 </script>
 <template>
     <section>
@@ -14,20 +49,18 @@ definePageMeta({
                 </h1>
                 <h2 class="text-4xl font-extrabold mx-auto md:text-5xl"> Build your Application with the best </h2>
                 <p class="max-w-2xl mx-auto"> Best opensource admin template. Built on top of Nuxtjs and Nuxt UI, Its
-                    flexibility, developer-friendly, modular, feature-rich, and highly customizable.. </p>
+                    flexibility, developer-friendly, modular, feature-rich, and highly customizable.</p>
                 <div class="items-center justify-center gap-3 flex">
-                    <UButton to="/dashboard" size="lg">View Demo</UButton>
+                    <UButton to="/dashboard" size="lg">Get Started</UButton>
                     <!-- <UButton icon="i-heroicons-star" target="_blank" to="/" size="lg" variant="outline" color="yellow">
                         Get Pro
                     </UButton> -->
-                    <UButton to="/docs" size="lg" variant="outline" color="gray">Docs
+                    <UButton target="_blank" to="https://uno-admin.vercel.app/" size="lg" variant="outline"
+                        color="gray">Docs
                     </UButton>
                 </div>
             </div>
-            <div class="mt-14">
-                <!-- <img src="~/assets/dashboard.png" class="w-full shadow-lg rounded-lg border dark:invert"
-                    alt=""> -->
-            </div>
+
         </div>
     </section>
     <section class="py-14">
@@ -38,32 +71,13 @@ definePageMeta({
             </div>
             <div class="mt-12">
                 <ul class="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
-                    <li class="space-y-3">
+                    <li v-for="(feature, key) in features" :key class="space-y-3">
                         <div
                             class="w-12 h-12 mx-auto bg-primary/10 text-primary-600 text-3xl rounded-full flex items-center justify-center">
-                            <UIcon name="i-heroicons-shield-check" />
+                            <UIcon :name="feature.icon" />
                         </div>
-                        <h4 class="text-lg font-semibold">Authentication</h4>
-                        <p>Included login, register and forgot-password pages. For you to build your authentication
-                            flow.</p>
-                    </li>
-                    <li class="space-y-3">
-                        <div
-                            class="w-12 h-12 mx-auto bg-primary/10 text-primary-600  text-3xl rounded-full flex items-center justify-center">
-                            <UIcon name="i-heroicons-paint-brush" />
-                        </div>
-                        <h4 class="text-lg font-semibold">Elegant Design</h4>
-                        <p>Craft beautiful sites with NuxtUI and Headless UI components. Built with TailwindCSS and
-                            mobile first.</p>
-                    </li>
-                    <li class="space-y-3">
-                        <div
-                            class="w-12 h-12 mx-auto bg-primary/10 text-primary-600 text-3xl rounded-full flex items-center justify-center">
-                            <UIcon name="i-heroicons-rectangle-group" />
-                        </div>
-                        <h4 class="text-lg font-semibold">Modular development</h4>
-                        <p>Build your application in a modular way, creating your own modules or using those from the
-                            community.</p>
+                        <h4 class="text-lg font-semibold">{{ feature.title }}</h4>
+                        <p class="text-slate-700">{{ feature.description }}</p>
                     </li>
                 </ul>
             </div>

@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     "./@core/auth",
     "./@features/dashboard",
     "./@features/site",
-    "./@features/docs",
   ],
   modules: ["@nuxt/ui", "@sidebase/nuxt-auth"],
   ui: {
