@@ -55,7 +55,7 @@ const features = [
                     <!-- <UButton icon="i-heroicons-star" target="_blank" to="/" size="lg" variant="outline" color="yellow">
                         Get Pro
                     </UButton> -->
-                    <UButton target="_blank" to="https://uno-admin.vercel.app/" size="lg" variant="outline"
+                    <UButton target="_blank" to="https://uno-admin-docs.vercel.app/" size="lg" variant="outline"
                         color="gray">Docs
                     </UButton>
                 </div>

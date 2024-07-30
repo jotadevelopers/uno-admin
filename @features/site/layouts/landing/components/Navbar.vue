@@ -3,7 +3,7 @@
 const mobileMenuOpen = ref(false);
 const links = [
     { label: 'Home', to: '/' },
-    { label: 'Documentation', to: 'https://uno-admin.vercel.app', exact: false }
+    { label: 'Documentation', to: 'https://uno-admin-docs.vercel.app', exact: false }
 ]
 </script>
 <template>
