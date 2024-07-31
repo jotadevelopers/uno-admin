@@ -1,6 +1,8 @@
 <template>
     <Page :nav-items="items">
-        <NuxtPage />
+        <PageBody>
+            <NuxtPage />
+        </PageBody>
     </Page>
 </template>
 <script setup>

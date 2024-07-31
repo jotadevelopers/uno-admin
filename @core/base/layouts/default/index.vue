@@ -35,6 +35,6 @@ useHead({ title: uno.title });
 </script>
 <style>
 :root {
-    --header-height: 120px
+    --header-height: 48px
 }
 </style>
