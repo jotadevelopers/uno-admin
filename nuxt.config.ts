@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   extends: [
     "./@core/base",
     "./@core/auth",
+    "./@core/permissions",
     "./@features/dashboard",
     "./@features/site",
   ],

@@ -1,27 +1,30 @@
 <template>
   <Page>
-    <div class="space-y-4">
-      <div class="grid md:grid-cols-4 gap-2">
-        <InfoCard v-for="(card, idx) in infoCards" :key="idx" :title="card.title" :color="card.color"
-          :description="card.description" :icon="card.icon" :info="card.info">
-        </InfoCard>
-      </div>
-      <div>
-        <UCard>
-          <template #header>
-            <h1>Recent Custumers</h1>
-          </template>
-          <UTable :rows="rows" :columns="columns">
-            <template #actions-data="{ row }">
-              <UButton color="primary" variant="ghost" icon="i-heroicons-chat-bubble-oval-left" />
+    <PageBody>
+      <div class="space-y-4">
+        <div class="grid md:grid-cols-4 gap-2">
+          <InfoCard v-for="(card, idx) in infoCards" :key="idx" :title="card.title" :color="card.color"
+            :description="card.description" :icon="card.icon" :info="card.info">
+          </InfoCard>
+        </div>
+        <div>
+          <UCard>
+            <template #header>
+              <h1>Recent Custumers</h1>
             </template>
-          </UTable>
-          <div class="flex justify-end px-3 py-3.5 border-t border-gray-200 dark:border-gray-700">
-            <UPagination v-model="page" :page-count="pageCount" :total="custumers.length" />
-          </div>
-        </UCard>
+            <UTable :rows="rows" :columns="columns">
+              <template #actions-data="{ row }">
+                <UButton color="primary" variant="ghost" icon="i-heroicons-chat-bubble-oval-left" />
+              </template>
+            </UTable>
+            <div class="flex justify-end px-3 py-3.5 border-t border-gray-200 dark:border-gray-700">
+              <UPagination v-model="page" :page-count="pageCount" :total="custumers.length" />
+            </div>
+          </UCard>
+        </div>
       </div>
-    </div>
+    </PageBody>
+
   </Page>
 </template>
 

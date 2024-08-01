@@ -5,12 +5,22 @@ type User = {
   email: string;
   password?: string;
   active: boolean;
+  abilities: any[];
 };
 let _user: User = {
   name: "Admin",
   password: "$2b$08$XA8T1CZucF3hmvNxXba/6eiddyIrSbcJIH16GVfwgMCVDFZept9xe",
   email: "admin@uno.com",
   active: true,
+  abilities: [
+    {
+      id: 1,
+      subject: "all",
+      action: "manage",
+      description: "For administrator",
+      active: true,
+    },
+  ],
 };
 
 export default class UserService {
